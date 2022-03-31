@@ -1048,7 +1048,8 @@ img {
 
 @media screen and (min-width: 568px) {
 	.home__content {
-		grid-template-columns: max-content 1fr 1fr;
+		/* grid-template-columns: max-content 1fr 1fr; */
+		grid-template-columns: max-content 1fr	;
 	}
 
 	.home__data {
@@ -1086,7 +1087,7 @@ img {
 	}
 
 	.section {
-		padding: 6rem 0 2rem;
+		padding: 8rem 0 2rem;
 	}
 
 	.section__subtitle {
