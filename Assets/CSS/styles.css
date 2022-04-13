@@ -554,7 +554,7 @@ img {
 
 .qualification-data {
 	display: grid;
-	grid-template-columns: 1fr max-content 1fr;
+	grid-template-columns: 2fr max-content 1fr;
 	column-gap: 1.5rem;
 }
 
@@ -1300,4 +1300,8 @@ img {
 	.contact__inputs {
 		grid-template-columns: repeat(2, 1fr);
 	}
+}
+
+.landing__page__style {
+	height: calc(100vh - 200px);
 }
