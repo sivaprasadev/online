@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+			crossorigin="anonymous"
+		/>
+		<!-- bootstrap-icons -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+		<title>Sivaprasad E V</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-md bg-body-tertiary">
+				<div class="container-fluid">
+					<button
+						class="navbar-toggler ms-auto"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#hero">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#projects" id="projects-link">Projects</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section id="hero" class="d-flex justify-content-center align-items-center">
+				<div class="container text-md-center">
+					<div class="d-md-inline-block">
+						<h1 class="d-block mb-0 fs-2 text-md-start">Hello,</h1>
+						<h2 class="mb-0 fs-2 text-md-center">I'm Sivaprasad E V</h2>
+						<p class="mb-0 fs-6 text-md-center">(FrontEnd Engineer @ Infosys)</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<section id="projects" class="pt-5">
+			<div class="container">
+				<h1>Projects</h1>
+				<div class="card">
+					<img src="./src/assets/shallWeConnectIcon.png" class="card-img-top" alt="..." />
+					<div class="card-body">
+						<h5 class="card-title">shallWeConnect</h5>
+						<p class="card-text">Turn any link into a scannable QR code in seconds—share instantly, hassle-free.</p>
+						<a href="./src/apk/shallweConnect.apk" class="btn btn-success" download>
+							<i class="bi bi-download me-2"></i> Download APK
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+			crossorigin="anonymous"
+		></script>
+
+		<script>
+			function handleViewPortHeight() {
+				const viewportHeight = window.innerHeight;
+				const navBarHeight = document.querySelector('.navbar').offsetHeight;
+
+				document.querySelector('#hero').style.height = `${viewportHeight - navBarHeight}px`;
+			}
+
+			window.addEventListener('resize', handleViewPortHeight);
+			handleViewPortHeight();
+		</script>
+	</body>
+</html>
